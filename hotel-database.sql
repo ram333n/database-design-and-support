@@ -15,7 +15,7 @@ CREATE TABLE IF NOT EXISTS rooms
 
 CREATE TABLE IF NOT EXISTS default_rooms
 (
-    number               INT     NOT NULL,
+    number               INT     NOT NULL PRIMARY KEY,
     children_zone_exists BOOLEAN NOT NULL DEFAULT FALSE
 );
 
@@ -24,7 +24,7 @@ ALTER TABLE default_rooms
 
 CREATE TABLE IF NOT EXISTS president_rooms
 (
-    number            INT     NOT NULL,
+    number            INT     NOT NULL PRIMARY KEY,
     suitable_for_vips BOOLEAN NOT NULL DEFAULT FALSE
 );
 
